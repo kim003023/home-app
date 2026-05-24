@@ -1313,7 +1313,9 @@ const TABS = [
 ];
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('list');
+  // 모바일 화면이면 초기 탭을 compare로, PC면 list로 설정
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
+  const [activeTab, setActiveTab] = useState(isMobile ? 'compare' : 'list');
   const [properties, setProperties] = useState([]);
   const [globalBudget, setGlobalBudget] = useState('');
 
@@ -1344,7 +1346,7 @@ export default function App() {
             <button
               key={tab.id}
               id={`tab-${tab.id}`}
-              className={`nav-tab${activeTab === tab.id ? ' active' : ''}`}
+              className={`nav-tab ${activeTab === tab.id ? 'active' : ''} ${tab.id === 'list' ? 'hide-on-mobile' : ''}`}
               onClick={() => setActiveTab(tab.id)}
             >
               <span className="nav-tab-icon">{tab.icon}</span>
@@ -1353,7 +1355,7 @@ export default function App() {
           ))}
         </nav>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+        <div className="header-controls" style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'var(--bg-surface)', padding: '6px 12px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
             <span style={{ fontSize: 13, fontWeight: 600 }}>💰 가용 예산</span>
             <input
