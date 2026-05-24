@@ -1,0 +1,150 @@
+{
+  "direction_regex_result": "남서",
+  "all_dirs_in_text": [],
+  "imgs": [
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111690/50706.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111690/50705.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111690/50707.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111690/50704.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111691/50704.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111689/50707.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111691/50705.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111689/50706.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111691/50706.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111689/50705.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111691/50707.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111689/50704.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111692/50704.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111688/50707.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111692/50705.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111688/50706.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111692/50706.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111688/50705.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111692/50707.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://map.pstatic.net/nrb/styles/basic/1779418104/17/111688/50704.png?mt=bg.ol.sw.ar.lko",
+      "alt": ""
+    },
+    {
+      "src": "https://ssl.pstatic.net/static/maps2/icons/pin_spot2.png",
+      "alt": ""
+    },
+    {
+      "src": "https://ssl.pstatic.net/static.land/static/service/20260205/maps/ico_agent.png",
+      "alt": ""
+    },
+    {
+      "src": "https://ssl.pstatic.net/static/maps/mantle/1x/new-scale-normal-b.png",
+      "alt": ""
+    },
+    {
+      "src": "https://ssl.pstatic.net/static/maps/mantle/1x/new-scale-normal-l.png",
+      "alt": ""
+    },
+    {
+      "src": "https://ssl.pstatic.net/static/maps/mantle/1x/new-scale-normal-r.png",
+      "alt": ""
+    },
+    {
+      "src": "https://ssl.pstatic.net/static/maps/mantle/1x/new-naver-logo-normal.png",
+      "alt": "NAVER"
+    },
+    {
+      "src": "https://ssl.pstatic.net/static/maps/mantle/1x/zoom-in-small-normal.png",
+      "alt": "지도 확대"
+    },
+    {
+      "src": "https://ssl.pstatic.net/static/maps/mantle/1x/zoom-handle.png",
+      "alt": "지도 확대/축소 슬라이더"
+    },
+    {
+      "src": "https://ssl.pstatic.net/static/maps/mantle/1x/zoom-out-small-normal.png",
+      "alt": "지도 축소"
+    },
+    {
+      "src": "https://ssl.pstatic.net/static/maps/mantle/1x/zoom-legend-left-on.png",
+      "alt": ""
+    },
+    {
+      "src": "https://ssl.pstatic.net/static/maps/mantle/1x/zoom-legend-left-normal.png",
+      "alt": ""
+    },
+    {
+      "src": "https://ssl.pstatic.net/static/maps/mantle/1x/zoom-legend-left-normal.png",
+      "alt": ""
+    },
+    {
+      "src": "https://ssl.pstatic.net/static/maps/mantle/1x/zoom-legend-left-normal.png",
+      "alt": ""
+    },
+    {
+      "src": "https://ssl.pstatic.net/static/maps/mantle/1x/zoom-legend-left-normal.png",
+      "alt": ""
+    },
+    {
+      "src": "https://ssl.pstatic.net/static/maps/mantle/1x/zoom-legend-left-normal.png",
+      "alt": ""
+    },
+    {
+      "src": "https://landthumb-phinf.pstatic.net/20120229_140/hscp_img_1330504775044Ar8E5_JPEG/GW70711_1330504772594.jpg?type=m562",
+      "alt": ""
+    }
+  ]
+}
