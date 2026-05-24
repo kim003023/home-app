@@ -1206,4 +1206,8 @@
     overflow-x: auto;
     padding-bottom: 4px;
   }
+  .budget-input {
+    min-width: unset !important;
+    width: 100px !important;
+  }
 }

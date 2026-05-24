@@ -1237,7 +1237,11 @@ function SimulatorView({ properties, globalBudget }) {
                 </div>
                 
                 {showSchedule && (
-                  <div className="data-table-wrapper" style={{ maxHeight: 400, overflowY: 'auto' }}>
+                  <>
+                    <div style={{ fontSize: 11, color: 'var(--text-muted)', textAlign: 'right', marginBottom: 4 }}>
+                      👉 표를 가로로 스와이프하여 넘겨보세요
+                    </div>
+                    <div className="data-table-wrapper" style={{ maxHeight: 400, overflowY: 'auto', overflowX: 'auto' }}>
                     <table className="data-table">
                       <thead style={{ position: 'sticky', top: 0, zIndex: 1 }}>
                         <tr>
@@ -1359,7 +1363,7 @@ export default function App() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'var(--bg-surface)', padding: '6px 12px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
             <span style={{ fontSize: 13, fontWeight: 600 }}>💰 가용 예산</span>
             <input
-              className="form-input"
+              className="form-input budget-input"
               type="number"
               placeholder="예: 30000"
               value={globalBudget}
