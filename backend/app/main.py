@@ -76,6 +76,8 @@ def create_property(request: PropertyCreateRequest, db: Session = Depends(get_se
     parsed_data = parse_property_data(request.url)
     if not parsed_data:
         raise HTTPException(status_code=400, detail="매물 정보를 파싱하지 못했습니다. URL을 다시 확인해 주세요.")
+    if "error" in parsed_data:
+        raise HTTPException(status_code=400, detail=parsed_data["error"])
 
     # 대지지분: 파싱 결과 우선, 없으면 수동 입력값 사용
     land_area_final = parsed_data.get("land_area") or request.land_area

@@ -19,8 +19,8 @@ def parse_property_data(url: str) -> dict | None:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
         try:
-            page.goto(target_url, wait_until="networkidle", timeout=20000)
-            page.wait_for_timeout(1500)
+            page.goto(target_url, wait_until="domcontentloaded", timeout=60000)
+            page.wait_for_timeout(5000)  # Render 서버가 느리므로 충분히 대기
             text = page.inner_text("body")
 
             # ── 매매가 ──────────────────────────────────────
@@ -88,8 +88,8 @@ def parse_property_data(url: str) -> dict | None:
                 "direction": direction,
             }
 
-        except Exception:
+        except Exception as e:
             traceback.print_exc()
-            return None
+            return {"error": f"파싱 에러: {str(e)}"}
         finally:
             browser.close()
