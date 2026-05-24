@@ -5,14 +5,21 @@ from playwright.sync_api import sync_playwright
 
 def parse_property_data(url: str) -> dict | None:
     """
-    네이버 부동산 인쇄용 URL에서 매물 정보를 파싱합니다.
-    반환값: dict (파싱 성공) / None (파싱 실패)
+    네이버 부동산 URL에서 매물번호를 추출해 인쇄용 URL로 변환한 뒤 파싱합니다.
     """
+    # 모바일 URL, 일반 PC URL에서 매물번호(articleNo) 추출 후 인쇄용 URL로 강제 변환
+    article_match = re.search(r'(?:articleNo=|article/info/|articles/|article/)(\d+)', url)
+    if article_match:
+        article_no = article_match.group(1)
+        target_url = f"https://new.land.naver.com/print/articles/{article_no}"
+    else:
+        target_url = url
+
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
         try:
-            page.goto(url, wait_until="networkidle", timeout=20000)
+            page.goto(target_url, wait_until="networkidle", timeout=20000)
             page.wait_for_timeout(1500)
             text = page.inner_text("body")
 
