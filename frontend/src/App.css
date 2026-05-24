@@ -1219,3 +1219,5 @@
     width: 100px !important;
   }
 }
+
+.floor-plan-layout, .simulator-container { min-width: 900px; }

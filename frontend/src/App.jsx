@@ -954,7 +954,7 @@ function FloorPlanView({ properties, globalBudget }) {
   );
 
   return (
-    <div>
+    <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch', paddingBottom: 16 }}>
       <div className="floor-plan-layout">
         {renderPlanCard(propA, 'A', selectedA, setSelectedA)}
         <div className="floor-plan-divider">VS</div>
@@ -1170,7 +1170,8 @@ function SimulatorView({ properties, globalBudget }) {
 
   return (
     <div>
-      <div className="simulator-layout">
+      <div className="simulator-container">
+      <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch', paddingBottom: 16 }}>
         <div className="simulator-params">
           <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 4 }}>
             ⚙️ 시뮬레이션 파라미터
@@ -1302,6 +1303,7 @@ function SimulatorView({ properties, globalBudget }) {
           </div>
         )}
       </div>
+      </div>
     </div>
   );
 }
@@ -1334,17 +1336,6 @@ export default function App() {
   }, []);
 
   useEffect(() => { fetchProperties(); }, [fetchProperties]);
-
-  useEffect(() => {
-    const metaViewport = document.querySelector('meta[name="viewport"]');
-    if (metaViewport) {
-      if (activeTab === 'floorplan' || activeTab === 'simulator') {
-        metaViewport.setAttribute('content', 'width=1200');
-      } else {
-        metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
-      }
-    }
-  }, [activeTab]);
 
   return (
     <div className="app-wrapper">
