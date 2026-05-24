@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import './App.css';
 
-const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
+const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:10000';
 
 // ─────────────────────────────────────────────────────────
 // 유틸 함수
@@ -170,7 +170,7 @@ function PropertyList({ properties, onRefresh }) {
       setUrl(''); setLandArea('');
       onRefresh();
     } catch (err) {
-      const msg = err.response?.data?.detail || '등록에 실패했습니다.';
+      const msg = err.response?.data?.detail || err.message || '등록에 실패했습니다.';
       alert(`❌ ${msg}`);
     } finally {
       setLoading(false);
