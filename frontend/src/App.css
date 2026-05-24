@@ -1221,3 +1221,19 @@
 }
 
 .floor-plan-layout, .simulator-container { min-width: 900px; }
+
+
+.floor-plan-layout {
+  min-width: 900px !important;
+  grid-template-columns: 1fr auto 1fr !important;
+}
+
+.simulator-layout {
+  min-width: 900px !important;
+  grid-template-columns: 300px 1fr !important;
+}
+
+.sim-results-grid {
+  grid-template-columns: 1fr 1fr !important;
+}
+

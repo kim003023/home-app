@@ -1170,8 +1170,8 @@ function SimulatorView({ properties, globalBudget }) {
 
   return (
     <div>
-      <div className="simulator-container">
       <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch', paddingBottom: 16 }}>
+        <div className="simulator-layout">
         <div className="simulator-params">
           <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 4 }}>
             ⚙️ 시뮬레이션 파라미터
