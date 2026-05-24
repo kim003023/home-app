@@ -310,10 +310,11 @@
   background: var(--bg-hover);
 }
 
-.data-table td {
+.data-table th, .data-table td {
   padding: 13px 16px;
   color: var(--text-primary);
   vertical-align: middle;
+  white-space: nowrap;
 }
 
 .data-table td.td-right {
@@ -622,6 +623,24 @@
 ═══════════════════════════════════════════════ */
 .bar-chart-wrap {
   margin-top: 20px;
+}
+
+.data-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-bottom: 2px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg-surface);
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.data-table td {
+  padding: 12px 16px;
+  white-space: nowrap;
 }
 
 .bar-chart-title {
