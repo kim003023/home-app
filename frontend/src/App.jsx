@@ -1295,6 +1295,7 @@ function SimulatorView({ properties, globalBudget }) {
                       </tbody>
                     </table>
                   </div>
+                  </>
                 )}
               </div>
             )}
