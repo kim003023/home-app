@@ -1335,6 +1335,17 @@ export default function App() {
 
   useEffect(() => { fetchProperties(); }, [fetchProperties]);
 
+  useEffect(() => {
+    const metaViewport = document.querySelector('meta[name="viewport"]');
+    if (metaViewport) {
+      if (activeTab === 'floorplan' || activeTab === 'simulator') {
+        metaViewport.setAttribute('content', 'width=1200');
+      } else {
+        metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+      }
+    }
+  }, [activeTab]);
+
   return (
     <div className="app-wrapper">
       <header className="app-header">
